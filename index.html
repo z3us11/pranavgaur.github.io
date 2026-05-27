@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Gaur - Unity Game Developer Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="tabs.js"></script>
+</head>
+<body>
+
+    <!-- <img style="left:30px; bottom: 0px;" src="images/gamepad.png" alt="" class="sticker-left">
+    <img style="right: 50px; top: 0px;" src="images/gamepad.png" alt="" class="sticker-right"> -->
+
+    <div class="portfolio-wrapper">
+
+        <header class="neo-box">
+            <h1>Pranav Gaur</h1>
+            <div class="badge">Unity Game Developer</div>
+            <p>
+                With over 4 years of experience working as a Unity Developer, I have a deep understanding of the Unity Engine. 
+                I am highly proficient in Unity UI systems with the ability to build custom visual interfaces, and excel at rapidly prototyping new ideas. 
+                <br>
+                I have also published a 2D platformer which is available on Steam.
+            </p>
+            <div class="contact-info">
+                <a href="mailto:gaurpranav11@gmail.com"> 📧 Email: gaurpranav11@gmail.com </a>| <a href="tel:+91 7018901179"> 📱 Phone: +91 7018901179 </a><br>
+                🔗 Links: <a href="https://pranavgaur.itch.io/">Itch.io</a>, <a href="https://store.steampowered.com/app/3149660/Jennys_Adventures/">Steam</a>
+            </div>
+        </header>
+
+        <nav class="tabs-container">
+            <button class="tab-button active" onclick="switchTab(event, 'work-experience')">Work History</button>
+            <button class="tab-button" onclick="switchTab(event, 'professional')">Professional Proj.</button>
+            <button class="tab-button" onclick="switchTab(event, 'personal')">Personal Proj.</button>
+            <button class="tab-button" onclick="switchTab(event, 'art')">Art Showcase</button>
+        </nav>
+
+        <main>
+            
+            <div id="projects-view" class="project-list">
+                
+                <a href="work/work-amity.html" class="project-card" data-category="work-experience">
+                    <div class="project-info">
+                        <h3>Assistant Professor</h3>
+                        <div class="timeline">Amity University | Sept'25 - Current</div>
+                        <p>Took lectures of multiple subjects for B.tech students. Subjects including:</p>
+                        <ul>
+                            <li>1<sup>st</sup> Semester: Operating Systems, Software Engineering, DBMS</li>
+                            <li>2<sup>nd</sup> Semester: Web Technologies, Analysis and Design of Algorithms</li>
+                        </ul>
+                        <br>
+                        <div class="tags">Tags: OS, DBMS, Software Engineering, Web Technologies, ADA</div>
+                    </div>
+                </a>
+
+                <a href="work/work-questt.html" class="project-card" data-category="work-experience">
+                    <div class="project-info">
+                        <h3>Unity Developer</h3>
+                        <div class="timeline">Questt | May'23 - Sept'24</div>
+                        <ul>
+                            <li>Worked on different iterations of a video game centered around the idea of creating a unique learning experience 
+                            for children where they can learn while having fun.</li>
+                            <li>Primarily focused on rocket science, aim is to expand to other domains as well.</li>
+                        </ul>
+
+                        <div class="tags">Tags: Unity3D, Physics Systems, Code Architecture, Quest System</div>
+                    </div>
+                </a>
+
+                <a href="work/work-rareprob.html" class="project-card" data-category="work-experience">
+                    <div class="project-info">
+                        <h3>Unity Developer</h3>
+                        <div class="timeline">Rareprob Solutions Pvt. Ltd. | Sept'22 - May'23</div>
+                        <br>
+                        <p>Worked on multiple small game projects which can be deployed both for mobile and web.</p>
+                        <br>
+                        <div class="tags">Tags: Unity, WebGL</div>
+                    </div>
+                </a>
+
+                <a href="work/work-apar.html" class="project-card" data-category="work-experience">
+                    <div class="project-info">
+                        <h3>Game Programmer</h3>
+                        <div class="timeline">Apar Games | Sept'18 - May'19</div>
+                            <ul>
+                                <li>Worked as a programmer for code design and implementation in multiple projects, bug fixes in existing projects</li>
+                                <li>Participated in a multiple Game Jams</li>
+                            </ul>
+                        <div class="tags">Tags: Unity3D, Match-3, Optimization, Game Jams</div>
+                    </div>
+                </a>
+
+                <a href="work/work-ironcode.html" class="project-card" data-category="work-experience">
+                    <div class="project-info">
+                        <h3>Game Programmer</h3>
+                        <div class="timeline">Ironcode Gaming | July'17 -  Sept'18</div>
+                        <br>
+                        <p>Worked on ongoing projects for fixing bugs and adding features.</p>
+                        <br>
+                        <div class="tags">Tags: Unity 2D, Card Games, UNET</div>
+                    </div>
+                </a>
+
+                <a href="work/work-nayidisha.html" class="project-card" data-category="work-experience">
+                    <div class="project-info">
+                        <h3>Game Developer Intern</h3>
+                        <div class="timeline">Nayi Disha | May'16 -  June'16</div>
+                        <br>
+                        <p>Developed an android game from scratch.</p>
+                        <br>
+                        <div class="tags">Tags: Unity 2D, Internship</div>
+                    </div>
+                </a>
+
+
+                <a href="projects/project-steam.html" class="project-card hidden" data-category="personal">
+                    <div class="project-visual">
+                        <img src="images/logo.ico">
+                    </div>
+                    <div class="project-info">
+                        <h3>Jenny's Adventures</h3>
+                        <div class="timeline">Steam Game | 2024</div>
+                        <p>A 2D platformer where you play as a cat in a world where you discover new abilities and paths to finally reach the summit.</p>
+                        <div class="tags">Tools: Unity, C#, Steamworks SDK</div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div id="art-view" class="art-grid hidden">
+                
+                <div class="art-card">
+                    <div class="art-frame">[ Shader Render ]</div>
+                    <div class="art-caption">Cel-Shaded Wind Grass (HLSL)</div>
+                </div>
+
+                <div class="art-card">
+                    <div class="art-frame">[ 3D Model ]</div>
+                    <div class="art-caption">Mech Drone Hard Surface asset</div>
+                </div>
+
+                <div class="art-card">
+                    <div class="art-frame">[ VFX Loop ]</div>
+                    <div class="art-caption">Stylized Fire Particle System</div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+   
+</body>
+</html>

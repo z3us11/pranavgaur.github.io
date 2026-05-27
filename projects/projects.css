@@ -1,0 +1,338 @@
+/* BASE SYSTEM SETUP */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Courier New', monospace; 
+    color: #000000;
+    background-color: #fafafa;
+    background-image: 
+        linear-gradient(#e0e0e0 1px, transparent 1px),
+        linear-gradient(90deg, #e0e0e0 1px, transparent 1px);
+    background-size: 40px 40px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    position: relative;
+}
+
+.box { 
+    background: #ffffff; 
+    border: 4px solid #000000; 
+    box-shadow: 8px 8px 0px #000000; 
+    padding: 30px; 
+    max-width: 1000px; 
+    width: 100%; 
+    margin: 40px auto;
+}
+
+.back { 
+    display: inline-block; 
+    padding: 8px 15px; 
+    border: 2px solid #000000; 
+    background: #FFDE4D; 
+    text-decoration: none; 
+    color: #000000; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+    box-shadow: 3px 3px 0px #000000; 
+}
+
+/* MAIN NAME LINK & HOVER ANIMATION */
+.header-name-link {
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    padding: 0;
+}
+
+h1 { 
+    font-size: 2rem; 
+    text-transform: uppercase; 
+    margin-bottom: 5px; 
+    transition: transform 0.1s ease, text-shadow 0.1s ease;
+}
+
+h2 { 
+    color: #ff3333; 
+    margin: 20px; 
+}
+
+.header-name-link:hover h1 {
+    transform: translate(-4px, -4px);
+    text-shadow: 4px 4px 0px #FFDE4D;
+}
+
+.header-name-link:active h1 {
+    transform: translate(0px, 0px);
+    text-shadow: 0px 0px 0px transparent;
+}
+
+.meta { 
+    font-size: 1.1rem; 
+    font-weight: bold; 
+    color: #ff3333; 
+    margin-bottom: 20px; 
+}
+
+img {
+    width: 100%;
+    box-shadow: 3px 3px 0px #000000; 
+    border: 2px solid #000000; 
+}
+
+p {
+    font-size: 1.05rem; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+}
+
+/* LISTS AND INDENTATION STYLES */
+ul { 
+    list-style: "➢ "; 
+    padding-left: 20px; 
+    line-height: 1.8; 
+    font-size: 1.05rem; 
+}
+
+dt { 
+    list-style: "➢ "; 
+    padding-left: 20px; 
+    line-height: 1.8; 
+    font-size: 1.05rem; 
+}
+
+dd { 
+    list-style: "- "; 
+    padding-left: 20px; 
+    line-height: 1.8; 
+    font-size: 0.75rem; 
+}
+
+li { 
+    margin-bottom: 10px; 
+}
+
+mark {
+    padding: 0px;
+}
+
+/* CORE LINK STYLES (ADOPTING THE SIGNATURE REPLICA FEEL) */
+a {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+    transition: all 0.1s ease;
+}
+
+a:hover {
+    background-color: #FFDE4D;
+}
+
+/* UNIQUE SPECIFICATION FOR CHRONOLOGICAL PATHS / LINKS IN CONTENT */
+.content-link, .timeline i, .timeline em {
+    text-decoration: none;
+    padding: 2px 6px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0px #000000;
+    display: inline-block;
+    transition: all 0.1s ease;
+}
+
+.content-link:hover, .timeline i:hover, .timeline em:hover {
+    background-color: #FFDE4D;
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.content-link:active, .timeline i:active, .timeline em:active {
+    transform: translate(1px, 1px);
+    box-shadow: 0px 0px 0px transparent;
+}
+
+/* SIDE NAVIGATION CONTROLS */
+.nav-side-btn {
+    position: fixed;
+    top: 120px;
+    transform: translateY(-50%);
+    background: #FFDE4D; 
+    border: 4px solid #000000;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    z-index: 10;
+}
+
+.nav-side-btn:hover {
+    background: #ffeea0; 
+    transform: translateY(-53%) translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #000000;
+}
+
+.nav-side-btn:active {
+    transform: translateY(-47%) translate(2px, 2px);
+    box-shadow: 1px 1px 0px #000000;
+}
+
+.nav-left {
+    left: 50px;
+}
+
+.nav-right {
+    right: 50px;
+}
+
+/* NEO-BRUTALIST PROJECT WINDOW FRAME STRUCTURE */
+.project-window {
+    border: 4px solid #000000;
+    background: #ffffff;
+    box-shadow: 3px 3px 0px #000000;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.project-window-header {
+    background: #000000;
+    color: #ffffff;
+    padding: 8px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-window-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.project-window-dot {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffffff;
+    background: transparent;
+}
+
+.project-window-dot:first-child {
+    background: #ff3333;
+}
+
+.project-window-body {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .project-window-body {
+        grid-template-columns: 250px 1fr;
+    }
+}
+
+.project-window-media {
+    border: 2px solid #000000;
+    background: #ddd;
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-window-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+}
+
+.project-window-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.project-window-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.project-window-desc {
+    text-align: to;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.project-window-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-window-tag {
+    background: #f0f0f0;
+    border: 2px solid #000000;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* RESPONSIVE SAFETY FALLBACKS */
+@media (max-width: 1024px) {
+    body {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-side-btn {
+        position: static;
+        transform: none;
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+        width: calc(50% - 20px);
+    }
+    .nav-side-btn:hover, .nav-side-btn:active {
+        transform: none;
+    }
+    .nav-container-mobile {
+        display: flex;
+        width: 100%;
+        max-width: 800px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .nav-container-mobile {
+        display: contents;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Jenny's Adventures</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+    <a href="previous-project.html" class="nav-side-btn nav-left">← PREV</a>
+    <a href="next-project.html" class="nav-side-btn nav-right">NEXT →</a>
+
+    <div class="box">
+        <a href="../index.html" class="back">← DASHBOARD</a>
+        <h1>
+            <a href="https://store.steampowered.com/app/3149660/Jennys_Adventures/" class="header-name-link">Jenny's Adventures</a>
+        </h1>
+        <div class="meta">
+            <span>Steam Game</span>
+            <span>| Development Time: 1 year</span>
+        </div>
+
+        <div class="project-window-tags">
+            <span class="project-window-tag">Unity 2D</span>
+            <span class="project-window-tag">Metroidvania</span>
+            <span class="project-window-tag">Unity Tilemap</span>
+            <span class="project-window-tag">Cozy</span>
+        </div>
+
+        <br>
+        <p>
+            Jenny's Adventure is a 2D platformer where you guide Jenny, a cat, through an interconnected world of biomes. 
+            Use abilities like wall jumps and sprints while managing stamina to explore and collect flowers. 
+            Focused on platforming and discovery, it offers a relaxing, combat-free experience.
+        </p>
+        <img src="images/aesthetics.gif">
+
+        <p>
+            <hr>
+        </p>
+        <h2>Technical Breakdown</h2>
+        <p>
+            <hr>
+        </p>
+
+        <!-- Platforming controls -->
+        <div class="project-window">
+            <div class="project-window-header">
+                <div class="project-window-dots">
+                    <div class="project-window-dot"></div>
+                    <div class="project-window-dot"></div>
+                    <div class="project-window-dot"></div>
+                </div>
+                <span>coyote_time.exe</span>
+            </div>
+            <div class="project-window-body">
+                <div style="background-image: url('images/controls.gif'); background-repeat: no-repeat; background-size: 300%; width: 100%; height: 350px; background-position: left 100% bottom 50%;" ]
+                    class="project-window-media">
+                </div>
+                <div class="project-window-content">
+                    <div class="project-window-title">Platforming controls</div>
+                    <div class="project-window-desc">
+                        Fine tuning the platforming controls was key for creating a good platformer. Controls needs to be responsive enough for precise movement.
+                        This game features a <mark>slightly different jump mechanic</mark> than most platformers. Players need to hold down the jump button and then release to jump.
+                        Releasing the button in the correct timing window leads to <i>Perfect Jump.</i> 
+                        <br>
+                        Other than that, game features other common platforming controls as well, like, wall run, sprint, ledge grab etc. All this provide players with a wide tool
+                        of moves to navigate the environment.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Metrovania progression -->
+        <div class="project-window">
+            <div class="project-window-header">
+                <div class="project-window-dots">
+                    <div class="project-window-dot"></div>
+                    <div class="project-window-dot"></div>
+                    <div class="project-window-dot"></div>
+                </div>
+                <span>metroid_matrix.ini</span>
+            </div>
+            <div class="project-window-body">
+                <div class="project-window-media">
+                    <img src="images/map.png">
+                </div>
+                <div class="project-window-content">
+                    <div class="project-window-title">Metroidvania Progression</div>
+                    <div class="project-window-desc">
+                        The first major design decision that dictated the further development of the game. <mark>Game world itself is just a single map.</mark>
+                        The game features bunch of abilities which the players need to collect in order to progress through the map. There is no fixed path to follow in the map,
+                        although your current set of abilities can dictate the areas that you can currently explore.
+                        <br>
+                        Game also features hidden paths and locked doors which players need to open, in order to create an alternate path to an area.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Unity Tilemap -->
+        <div class="project-window">
+            <div class="project-window-header">
+                <div class="project-window-dots">
+                    <div class="project-window-dot"></div>
+                    <div class="project-window-dot"></div>
+                    <div class="project-window-dot"></div>
+                </div>
+                <span>tilemap_compiler.conf</span>
+            </div>
+            <div class="project-window-body">
+                <div class="project-window-media">
+                    <img src="images/tilemap.png">
+                </div>
+                <div class="project-window-content">
+                    <div class="project-window-title">Unity Tileset</div>
+                    <div class="project-window-desc">
+                        To build the world map, Unity Tileset is used. It makes <mark>creating and testing huge areas</mark> of the map really fast and efficient.
+                        A bunch of rules can be set on how the tileset will be painted. Features like hidden paths, different areas etc. were a lot easier to implement using the tileset.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
